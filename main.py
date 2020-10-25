@@ -6,3 +6,11 @@ raylibpy.init_window(900, 500, "Hello")
 ballpos = (raylibpy.get_screen_width, raylibpy.get_screen_height)
 
 raylibpy.set_target_fps(60)
+
+while not raylibpy.window_should_close():
+    raylibpy.begin_drawing()
+    raylibpy.clear_background(raylibpy.Color(0, 0, 255, 255))
+    raylibpy.draw_circle(100, 100, 10.0, raylibpy.BLACK)
+    raylibpy.end_drawing()
+
+raylibpy.close_window()
