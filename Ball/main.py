@@ -1,6 +1,6 @@
-import raylibpy
 import os
 os.environ["RAYLIB_BIN_PATH"] = "raylib-2.0.0-Win64-mingw/lib/"
+import raylibpy
 
 raylibpy.init_window(900, 500, "Hello")
 ball = raylibpy.Vector2(100, 100)
@@ -8,6 +8,7 @@ ball = raylibpy.Vector2(100, 100)
 raylibpy.set_target_fps(60)
 
 while not raylibpy.window_should_close():
+
     if raylibpy.is_key_down(raylibpy.KEY_RIGHT):
         ball.x += 5
     if raylibpy.is_key_down(raylibpy.KEY_DOWN):

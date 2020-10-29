@@ -14,7 +14,7 @@ class Student:
     self.name = name
     self.age = 1
     self.male = True
-
+    
   # this is a static method; if outside a class, it's called a plain function
   def static_method():
     print("Static method: look ma! No self; I can be called without any object")
@@ -22,7 +22,7 @@ class Student:
 def NewFunc():
   new_student = Student("Visu")
   new_student.hello("lshdf")
-  Student.static_method()
+Student.static_method()
 
 # Calling plain function
 NewFunc()
@@ -31,7 +31,7 @@ s1 = Student("abc")  # instantiation: creating object from class
 s = []
 s.append(Student("Selva"))
 s.append(Student("Sundaram"))
-s.append(Student("Skandha"))
+s.append(Student("skandha"))
 
 for i in range(3):
   my_function("Kumar", "Selva")
